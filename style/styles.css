@@ -1,10 +1,10 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
   background-color: lightblue;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .title {
   text-align: center;
@@ -12,9 +12,21 @@ body {
 .list {
   text-align: center;
   background-color: white;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   margin-left: 25%;
   width: 50%;
+}
+input {
+  height: 30px;
+  border-style: solid black 1px;
+  font-size: 18px;
+  border-radius: 8px;
+}
+button {
+  width: 10%;
+  height: 33px;
+  border-radius: 50px;
+  border-style: solid black 1px;
+  background-color: lightblue;
+  font-size: 18px;
 }
