@@ -10,11 +10,13 @@ body {
   text-align: center;
 }
 .list {
-  text-align: center;
   background-color: white;
-  justify-content: center;
   margin-left: 25%;
   width: 50%;
+  border-radius: 15px;
+}
+.groceries {
+  margin-left: 3%;
 }
 input {
   height: 30px;
