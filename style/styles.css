@@ -10,10 +10,11 @@ body {
   text-align: center;
 }
 .list {
+  display: flex;
   background-color: white;
-  margin-left: 25%;
-  width: 50%;
+  width: 100%;
   border-radius: 15px;
+  flex-direction: column;
   text-align: center;
 }
 .groceries {
@@ -33,6 +34,6 @@ button {
   background-color: lightblue;
   font-size: 18px;
 }
-.user-input-3 {
-  width: 50px;
+li {
+  list-style: none;
 }
