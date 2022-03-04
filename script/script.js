@@ -1,7 +1,7 @@
-//alert("Velkommen til din shoppingliste!")
-//alert(
-//  "Her kan du legge til varer du trenger, har nok av, pris på varer og fjerne varer du har handlet ferdig eller ikke trenger mer av"
-//);
+alert("Velkommen til din shoppingliste!")
+alert(
+  "Her kan du legge til varer du trenger, har nok av, pris på varer og fjerne varer du har handlet ferdig eller ikke trenger mer av"
+);
 
 var groceries = document.getElementById("groceries");
 var items1 = document.getElementById("items1");
