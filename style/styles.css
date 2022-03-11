@@ -6,19 +6,16 @@
 body {
   background-color: lightblue;
 }
-.title {
-  text-align: center;
-}
 .list {
   display: flex;
+  margin-top: 60px;
+  margin-left: 15%;
   background-color: white;
-  width: 100%;
+  width: 70%;
   border-radius: 15px;
   flex-direction: column;
   text-align: center;
-}
-.groceries {
-  margin-left: 6%;
+  justify-content: center;
 }
 input {
   height: 30px;
@@ -26,13 +23,21 @@ input {
   font-size: 18px;
   border-radius: 8px;
 }
-button {
-  width: 10%;
+.add-button {
+  width: 5%;
   height: 33px;
   border-radius: 50px;
   border-style: solid black 1px;
   background-color: lightblue;
-  font-size: 18px;
+  font-size: 15px;
+}
+.delete-button {
+  width: 3%;
+  height: 25px;
+  border-radius: 50px;
+  border-style: solid black 1px;
+  background-color: lightblue;
+  font-size: 14px;
 }
 li {
   list-style: none;

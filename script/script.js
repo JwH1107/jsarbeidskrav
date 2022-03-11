@@ -28,7 +28,7 @@ function listItems1() {
   items1.innerHTML = "";
   for (let i = 0; i < itemArray1.length; i++)
     items1.innerHTML += `<li>
-        <h3>${itemArray1[i].items1}</h3><button id="delete" onclick="deleteItems1(${i})">Slett</button>
+        <p>${itemArray1[i].items1}</p><button class = "delete-button" id="delete" onclick="deleteItems1(${i})">Slett</button>
       </li>`;
 }
 
@@ -48,7 +48,7 @@ function listItems2() {
   items2.innerHTML = "";
   for (let i = 0; i < itemArray2.length; i++)
     items2.innerHTML += `<li>
-        <h3>${itemArray2[i].items2}</h3><button id="delete" onclick="deleteItems2(${i})">Slett</button>
+        <p>${itemArray2[i].items2}</p><button class = "delete-button" id="delete" onclick="deleteItems2(${i})">Slett</button>
       </li>`;
 }
 
@@ -67,13 +67,19 @@ function addItem3() {
 }
 
 function listItems3() {
+  let sum = 0;
+  for (let i = 0; i < itemArray3.length; i++) {
+    sum += +itemArray3[i].price;
+    console.log(sum);
+  }
   items3.innerHTML = "";
   for (let i = 0; i < itemArray3.length; i++)
     items3.innerHTML += `<li>
-        <h3>${itemArray3[i].items3}</h3>
+        <p>${itemArray3[i].items3}</p>
       </li> <li>
-        <h3>${itemArray3[i].price}</h3>
-      <button id="delete" onclick="deleteItems3(${i})">Slett</button></li>`;
+        <p>${itemArray3[i].price},-</p>
+      <button class = "delete-button" id="delete" onclick="deleteItems3(${i})">Slett</button></li>
+      <p>${sum},-</p>`;
 }
 
 //slett 1
@@ -88,21 +94,19 @@ function deleteItems1(i) {
 //slett 2
 
 function deleteItems2(i) {
-   if (prompt("Vil du slette vare? ja/nei") == "ja") {
+  if (prompt("Vil du slette vare? ja/nei") == "ja") {
     itemArray2.splice(i, 1);
     listItems2();
   } else if ("nei") {
   }
 }
 
-
 //slett 3
 
 function deleteItems3(i) {
-   if (prompt("Vil du slette vare? ja/nei") == "ja") {
+  if (prompt("Vil du slette vare? ja/nei") == "ja") {
     itemArray3.splice(i, 1);
     listItems3();
   } else if ("nei") {
   }
 }
-

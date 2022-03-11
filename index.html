@@ -12,10 +12,13 @@
     <div class="list">
       <h1 class="title">Shopping liste</h1>
       <br />
+      <h3>Hva du har nok av</h3>
       <div id="groceries">
-        <h3>Hva du har nok av</h3>
         <br />
-        <input id="user-input-1" type="text" /><button onclick="addItem1()">
+        <input id="user-input-1" type="text" placeholder="produkt" /><button
+          class="add-button"
+          onclick="addItem1()"
+        >
           Legg til
         </button>
         <ul id="items1"></ul>
@@ -24,18 +27,24 @@
       <div id="groceries">
         <h3>Hva du begynner å gå tom for</h3>
         <br />
-        <input id="user-input-2" type="text" /><button onclick="addItem2()">
+        <input id="user-input-2" type="text" placeholder="produkt" /><button
+          class="add-button"
+          onclick="addItem2()"
+        >
           Legg til
         </button>
         <ul id="items2"></ul>
       </div>
       <br />
-      <div id="groceries">
+      <div class="container" id="groceries">
         <h3>Hva du må kjøpe mer av</h3>
         <br />
-        <input id="user-input-3" type="text" /><input id="price-input" type="text" /><button onclick="addItem3()">
-          Legg til
-        </button>
+        <input id="user-input-3" type="text" placeholder="produkt" /><input
+          id="price-input"
+          type="number"
+          placeholder="pris"
+        />
+        <button class="add-button" onclick="addItem3()">Legg til</button>
         <ul id="items3"></ul>
       </div>
       <br />
